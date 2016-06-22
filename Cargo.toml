@@ -1,0 +1,17 @@
+[package]
+name = "noise-rs-ffi"
+version = "0.1.0"
+description = "An FFI for *noise-rs* to be used by non-Rust code."
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/phoenixenero/noise-rs-ffi"
+keywords = ["noise", "ffi", "c"]
+authors = ["Phoenix Enero <phoenix.enero@gmail.com>"]
+
+[lib]
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+noise = "^0.2.0"
+libc = "^0.2.12"
